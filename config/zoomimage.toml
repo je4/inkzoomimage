@@ -1,0 +1,35 @@
+logfile = "" # log file location
+loglevel = "DEBUG" # CRITICAL|ERROR|WARNING|NOTICE|INFO|DEBUG
+exportpath = "c:/temp/performance"
+width = 27000
+height = 27000
+cheight = 150
+
+mediaserver = "https://ba14ns21403-sec1.fhnw.ch/mediasrv"
+
+[filter]
+    #catalog = ["iidarchiv", "diplom", "HGKThesen", "ACT", "HGKResearch", "Institut_Kunst"]
+    #catalog = ["iidarchiv", "iid", "Institut_IIG", "Institut_IMD", "hgkfotos"]
+    "category.keyword" = [
+        "zotero2!!PCB_Basel",
+        "zotero2!!ACT Performance Festival",
+        "zotero2!!Konvolute",
+        "zotero2!!Performance Art",
+        "zotero2!!Kaskadenkondensator Basel",
+        "zotero2!!Archive des Ephemeren",
+        "zotero2!!Perf en Bref",
+        "bangbang",
+        "zotero2!!Digitale See",
+        "zotero2!!Albena Mihaylova",
+        "zotero2!!Doce en Diciembre!!Oceanic Issues - Mensajes Oceánicos",
+        "zotero2!!Interviews Archiv Performativ",
+        "zotero2!!Performance Art",
+        "zotero2!!Perf en Bref",
+        "zotero2!!Werke!!Hochschule für Musik!!Motet Cycles"
+    ]
+
+
+[elasticsearch]
+    endpoint = ["https://elastic.med.campusderkuenste.ch/"]
+    index = "fhnw_ink"
+    apikey = "%%ELASTIC_APIKEY%%"
